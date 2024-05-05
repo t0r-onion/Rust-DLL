@@ -1,0 +1,11 @@
+[package]
+name = "Rust-DLL"
+version = "0.1.0"
+edition = "2021"
+author = "tor"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+winapi = { version = "0.3", features = ["winuser", "libloaderapi"] }
